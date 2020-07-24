@@ -260,9 +260,9 @@ public class _02_OpenCartWithLoginTest extends OpenCartDriver {
     // add the item to wishlist, delete it and verify it's not present inside the wishlist page
     @Test(dependsOnMethods = {"createAccountTest", "loginTestCase", "addToWishListTest"})
     void deleteWishListTest(){
+        driver.navigate().to("http://opencart.abstracta.us/index.php?route=account/wishlist");
         // delete first item from wishlist
-        driver.findElement(By.xpath("//a[text()='"+randomlySelectedProductNameToAddToWishlist+"']/../..//a[@class='btn btn-danger']")).click();
-
+        driver.findElement(By.xpath("//a[contains(text(),'"+randomlySelectedProductNameToAddToWishlist+"')]/../..//a[@class='btn btn-danger']")).click();
         // verifying success message that product was added to wishlist
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("alert-success")));
         methods.verifyOneContainsText(page.successAlert, "success");
