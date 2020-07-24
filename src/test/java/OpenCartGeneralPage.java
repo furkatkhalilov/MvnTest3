@@ -95,6 +95,6 @@ public class OpenCartGeneralPage {
     @FindBy(css = "tbody > tr > td.text-left")
     public List<WebElement> productProperties;
 
-    @FindBy(css = "tbody > tr > td.text-right")
+    @FindBy(css = "form tbody > tr > td.text-right")
     public List<WebElement> productPrices;
 }
