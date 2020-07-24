@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Task01">
+    <parameter name="email" value="test12345asda@test.com"></parameter>
+    <parameter name="password" value="someRassword123"></parameter>
+    <parameter name="useRandom" value="false"></parameter>
+    <test name="SimpleTestNG">
+        <classes>
+            <class name="day22._01_OpenCartWithoutLoginTest"></class>
+            <class name="day22._02_OpenCartWithLoginTest"></class>
+        </classes>
+    </test>
+</suite>
