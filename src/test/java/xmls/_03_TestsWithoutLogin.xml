@@ -8,7 +8,6 @@
     <test name="SimpleTestNG">
         <classes>
             <class name="_01_OpenCartWithoutLoginTest"></class>
-            <class name="_02_OpenCartWithLoginTest"></class>
         </classes>
     </test>
 </suite>
