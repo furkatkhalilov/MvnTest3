@@ -1,7 +1,6 @@
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeClass;
-import utils.BaseDriver;
 import utils.ReusableMethods;
 
 public class OpenCartDriver extends BaseDriver {
